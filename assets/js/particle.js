@@ -1,16 +1,17 @@
 /* ---- particles.js config ---- */
 
+/*
 particlesJS('particles-js', {
 	particles: {
 		number: {
-			value: 140,
+			value: 20,
 			density: {
 				enable: true,
 				value_area: 800
 			}
 		},
 		color: {
-			value: [ '#2EB67D', '#ECB22E', '#E01E5B', '#36C5F0' ]
+			value: ['#2EB67D', '#ECB22E', '#E01E5B', '#36C5F0']
 		},
 		shape: {
 			type: 'circle',
@@ -27,7 +28,7 @@ particlesJS('particles-js', {
 				height: 100
 			}
 		},
-		
+
 		opacity: {
 			value: 1,
 			random: false,
@@ -83,17 +84,19 @@ particlesJS('particles-js', {
 			}
 		},
 		modes: {
-			'repulse' : {
+			'repulse': {
 				distance: 70,
 				duration: 0.4
 			},
-			'push' : {
+			'push': {
 				particles_nb: 4
 			}
 		}
 	},
 	retina_detect: true
 });
+*/
+
 const allElements = document.querySelectorAll('.animated-text');
 
 // It checks if there is at least one element
