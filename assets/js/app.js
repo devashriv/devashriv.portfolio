@@ -2,7 +2,7 @@
 
 let header = $(`
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-<a class="navbar-brand" href="index.html">John Doe </a>
+<a class="navbar-brand" href="index.html">Dee Vagholkar </a>
 <div class="hamburger_wrapper navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
 
   <div id="js-hamburger" class="hamburger">
@@ -128,30 +128,30 @@ let footer = $(`
 
 // Window Loads
 $(function () {
-    let bodyElement = $(`body`);
-    bodyElement.prepend(header);
-    bodyElement.append(footer);
-  
-//toggler hamburger functions
-    const menuBtn = document.querySelector('.navbar-toggler');
-    let menuOpen = false;
-    menuBtn.addEventListener('click', () => {
-      if(!menuOpen){
-        menuBtn.classList.add('open')
-        menuOpen = true;
-      }
-      else{
-        menuBtn.classList.remove('open');
-        menuOpen = false;
-      }
+  let bodyElement = $(`body`);
+  bodyElement.prepend(header);
+  bodyElement.append(footer);
+
+  //toggler hamburger functions
+  const menuBtn = document.querySelector('.navbar-toggler');
+  let menuOpen = false;
+  menuBtn.addEventListener('click', () => {
+    if (!menuOpen) {
+      menuBtn.classList.add('open')
+      menuOpen = true;
+    }
+    else {
+      menuBtn.classList.remove('open');
+      menuOpen = false;
+    }
   });
 
 });
 
 // function for toggling hamburger is-active class
-$(function(){
-  
-  $("#js-hamburger").on("click", function(){
+$(function () {
+
+  $("#js-hamburger").on("click", function () {
     $(this).toggleClass('is-active');
   });
 
@@ -159,8 +159,8 @@ $(function(){
 
 // Navbar current page highlight
 
-$(function(){
-  $('a.nav-link').each(function() {
+$(function () {
+  $('a.nav-link').each(function () {
     if ($(this).prop('href') == window.location.href) {
       $(this).addClass('current-link');
     }
@@ -169,16 +169,16 @@ $(function(){
 
 //function to remove underline on hover
 
-$(document).ready(function(){
+$(document).ready(function () {
 
   $("a.nav-link").hover(
-       function () {
-         $(this).removeClass("current-link");
-       },
-       function () {
-        if ($(this).prop('href') == window.location.href) {
-          $(this).addClass('current-link');
-        }
+    function () {
+      $(this).removeClass("current-link");
+    },
+    function () {
+      if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('current-link');
       }
+    }
   );
 });
